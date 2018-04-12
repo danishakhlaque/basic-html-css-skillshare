@@ -1,20 +1,50 @@
 body{
     padding:0;
     margin:0;
+    color: white;
+    font-family: sans-serif;
+}
+a{
+   
+    text-decoration: none;
+    color:#fff;
 }
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-
 .navigation{
-    overflow:auto;
-
+    overflow: auto;
+}
+.btn{
+    color: black;
+    padding: 15px;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px black;
+    cursor: pointer;
+    transition: all  ease-in-out 0.5s;
+}
+.btn:hover{
+    padding-left:30px;
+    padding-right: 30px;
+    color:green;
+    background-color: rgb(235, 194, 118);
+}
+.banner{
+   /* background-image: url('./wall1.jpg');*/
+   /*it is used to give colour from left to right anf from top to bottom or vice versa...........in place of right we can add top*/
+   background-size: cover;
+   background-image: linear-gradient(to top,rgba(214, 205, 175, 0.5),rgb(0, 0, 0,0.5)),url('./wall1.jpg');
+    color:#fff;
+}
+.banner-body{
+    padding:10%;
 }
 
 [class*="col-"]{
     float:left;
     padding:15px;
-
 }
 .col-1{
     width:8.33%;
